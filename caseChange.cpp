@@ -99,3 +99,20 @@ int countNum(vector<vector<int>>& cellCase,int i,int j)
     }
     return result;
 }
+//
+string to_str(vector<vector<int>>& cellCase,char ch)
+{
+    string str;
+    for(int i=0;i<cellCase.size();i++)
+    {
+        for(int j=0;j<cellCase[0].size();j++)
+        {
+            if(cellCase[i][j])
+                str.push_back('*');
+            else
+                str.push_back(ch);
+        }
+        str.push_back('\n');
+    }
+    return str;
+}
