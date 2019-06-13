@@ -5,7 +5,6 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-
 #include "sizeFix.h"
 
 vector<vector<int>> sizeFix(vector<vector<int>>& userCase,int width,int high)
